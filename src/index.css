@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav {
+    @apply bg-red-300 h-14 w-full shadow-slate-300 shadow-md flex justify-between pl-10 pr-20;
+}
+
+.nav-item {
+    @apply text-gray-600 shadow-yellow-50 drop-shadow-xl font-extrabold text-xl p-2
+}
+
+.header {
+    @apply h-40 bg-neutral-800 w-full text-center p-20 text-red-300 text-7xl font-bold
+}
+
+.text-card {
+    @apply block p-6 h-80 w-72 rounded-lg border border-gray-200 shadow-md bg-white opacity-70;
+}
+
+.social-item {
+    @apply border border-neutral-500 bg-neutral-800 text-white rounded-xl h-20 w-40 text-center pt-7 shadow-xl shadow-gray-500 mb-5
+}
+
+.footer {
+    @apply bg-neutral-800 text-white h-20 justify-end mt-14 pt-10
+}
