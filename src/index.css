@@ -11,7 +11,7 @@
 }
 
 .header {
-    @apply h-40 bg-neutral-800 w-full text-center p-20 text-red-300 text-7xl font-bold
+    @apply h-40 bg-neutral-800 w-full text-center p-10 md:p-20 text-red-300 text-7xl font-bold
 }
 
 .text-card {
@@ -24,4 +24,28 @@
 
 .footer {
     @apply bg-neutral-800 text-white h-20 justify-end mt-14 pt-10
+}
+.slider{
+    @apply relative h-[900px]  w-auto flex justify-center items-center mt-20;
+}
+
+.image{
+    @apply w-[800px]   h-[350px] md:h-[400px] lg:h-[550px] xl:h-[900px] rounded-xl 
+}
+.right-arrow{
+    @apply absolute mt-10 md:mt-20 ml-[370px] md:ml-[750px] lg:ml-[900px] xl:ml-[1650px]  text-3xl md:text-5xl text-black z-10 pointer-events-auto
+    select-none
+}
+
+.left-arrow{
+    @apply absolute mt-10 md:mt-20 mr-[370px] md:mr-[750px] lg:mr-[900px] xl:mr-[1650px] text-3xl md:text-5xl text-black z-10 pointer-events-auto
+    select-none
+}
+.slide{
+ @apply opacity-0 duration-500
+
+}
+
+.slide.active{
+    @apply opacity-100 duration-500 scale-[10px]
 }

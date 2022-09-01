@@ -4,6 +4,8 @@ import Header from "./Header";
 import Text from "./Text";
 import Socialmida from "./Socialmida";
 import Footer from "./Footer";
+import ImageSlider from "./ImageSlider";
+import { SliderData } from "./SliderData";
 
 function App() {
   return (
@@ -14,6 +16,9 @@ function App() {
         <Text />
         <Socialmida />
       </div>
+      <duv>
+        <ImageSlider slides={SliderData} />
+      </duv>
 
       <Footer />
     </div>
